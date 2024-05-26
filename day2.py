@@ -3,8 +3,9 @@ def convert_add(list: list):
     for string in list:
         number = int(string)
         numbers.append(number)
-    return numbers
+    sum_of_nums = sum(numbers)
+    return numbers, sum_of_nums
 
 list_of_strings = ["1", "3", "5"]
-answer = convert_add(list_of_strings)
-print(answer)
+answer, answer2 = convert_add(list_of_strings)
+print(answer, answer2)
